@@ -1,0 +1,8 @@
+.btn.btn-outline-dark img {
+  transition: .3s;
+}
+
+.btn.btn-outline-dark:hover img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}

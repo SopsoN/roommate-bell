@@ -19,7 +19,9 @@ function createWindow ()
 
   win.on('closed', function () {
     win = null
-  })
+  });
+
+  createTrayIcon();
 }
 
 function createTrayIcon()
@@ -54,6 +56,5 @@ app.on('activate', function ()
 {
   if (win === null) {
     createWindow();
-    createTrayIcon();
   }
 });
